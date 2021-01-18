@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ## Analysing images
 
-- Add .jpg files to be analysed into a subfolder `images`
-- Run `plates.py`
+- Add `.jpg` files to be analysed into a subfolder `images`
+- Run `plates.py` (double click on it)
 - Fungal growth area for each image can be found in the output file `area.csv`
 - Annotated images can be found in the folder `output`. Check these to make sure the computer recognised the fungal growth correctly!
