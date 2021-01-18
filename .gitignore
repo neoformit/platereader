@@ -1,5 +1,5 @@
 # Project-specific
-input/*.jpg
+images/*.jpg
 output/*.jpg
 *.csv
 
