@@ -36,7 +36,7 @@ def main():
     with open('areas.csv', 'w') as f:
         f.write('Image,Area (px)\n')
         f.write('\n'.join([
-            ','.join([k, str(v)]) for k, v in areas.items()
+            ','.join([k.split('/')[-1], str(v)]) for k, v in areas.items()
         ]) + '\n')
 
 
@@ -88,8 +88,8 @@ def read_plate_area(filename):
     plt.axis('off')
 
     fname = os.path.join(
-        OUTPUT_DIRNAME,
-        filename.replace('.jpg', OUTPUT_EXTENSION),
+        filename.replace(INPUT_DIRNAME, OUTPUT_DIRNAME)
+        .replace('.jpg', OUTPUT_EXTENSION),
     )
     print(f"Saving contour image {fname}...")
     plt.savefig(fname, dpi=300)
@@ -142,4 +142,4 @@ if __name__ == '__main__':
         main()
     except Exception as exc:
         print(str(exc))
-        input('Press enter to quit\n> ')
+    input('Press enter to quit\n> ')
