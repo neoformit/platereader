@@ -3,10 +3,12 @@ Measure fungal growth with computer vision
 
 ## Installation
 
-- Requires a python 3.7 + installation (to download windows installer [click here](https://www.python.org/ftp/python/3.8.7/python-3.8.7-amd64.exe))
+- Install Git to clone repository (USC software centre)
+- Requires a python 3.7 + installation (USC software centre or download windows installer [click here](https://www.python.org/ftp/python/3.8.7/python-3.8.7-amd64.exe))
 - On the command line:
 
 ```
+cd <path/to/wherever/you/want/it>
 git clone https://github.com/neoformit/platereader.git
 cd platereader
 pip install -r requirements.txt
